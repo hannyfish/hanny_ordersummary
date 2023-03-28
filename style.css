@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {--paleblue: hsl(225, 100%, 94%);
+--briblue: hsl(245, 75%, 52%);
+--vpaleblue: hsl(225, 100%, 98%);
+--desatblue: hsl(224, 23%, 55%);
+--darkblue: hsl(223, 47%, 23%);}
+
+body {background: var(--paleblue);
+    min-height: 100vh;
+    display: grid;
+  place-content: center;
+}
+
+ .sr-only {
+    position: absolute ;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+  }
+
+/*Mobile Styles*/
+
+body {background-image: url(https://raw.githubusercontent.com/hannyfish/hanny_ordersummary/b84f7e2056aa307aae47d7fd2d0a2b56cb677361/pattern-background-mobile.svg); background-repeat: no-repeat;}
+main {
+  min-height: 100vh;
+  max-width: 400px;
+    margin: 0 auto;}
+
+.order-bg {width: 95%; height: auto; background: white; border-radius: 15px; display: flex; flex-direction: column; align-content: center; justify-content: space-evenly; }
+.order-img {background-image: url("https://raw.githubusercontent.com/hannyfish/hanny_ordersummary/b84f7e2056aa307aae47d7fd2d0a2b56cb677361/illustration-hero.svg"); border-radius: 15px 15px 0 0; height: 10em; background-size: cover; object-fit:cover;}
+
+.order-bg h2 {font-family: 'Red Hat Display', sans-serif; font-weight: 900; color: var(--darkblue); text-align: center;}
+.order-bg section {font-size: 14px;font-family: 'Red Hat Display', sans-serif; font-weight: 500; color: var(--desatblue); text-align: center; width: 70%; align-self: center;}
+
+.order-plan {width: 70%; background: var(--vpaleblue); height: 47px; padding: 10px; display: flex;align-self: center;flex-direction: row; align-items: center; justify-content: space-evenly; margin: 10px;}
+.order-plan::before {content: url(https://raw.githubusercontent.com/hannyfish/hanny_ordersummary/b84f7e2056aa307aae47d7fd2d0a2b56cb677361/icon-music.svg);}
+.order-desc {width: 50%; height: 75%; font-size: 13px; font-family: 'Red Hat Display', sans-serif; color: var(--desatblue);}
+.order-plan b {color: var(--darkblue);}
+.order-plan a {font-size: 12px;}
+
+.order-button {width: 70%; background: var(--briblue); height: 40px; border-radius: 10px; color: var(--vpaleblue); text-decoration: none; align-self: center; display: grid; place-content: center; font-family: 'Red Hat Display', sans-serif; box-shadow: 8px 8px 8px var(--paleblue); margin: 20px; font-weight: 700;}
+.order-button:hover {background: var(--desatblue);}
+
+.order-cancel {width: 70%; align-self: center; color: var(--desatblue); font-size: 16px; font-family: 'Red Hat Display', sans-serif; font-weight: 700; text-align: center;margin: 10px;}
+
+/*Desktop Styles*/
+@media screen and (min-width: 900px)
+
+{
+  
+  body {background-image: url(https://raw.githubusercontent.com/hannyfish/hanny_ordersummary/b84f7e2056aa307aae47d7fd2d0a2b56cb677361/pattern-background-desktop.svg); background-repeat: no-repeat;}
+  
+  main {
+    min-width: 950px;
+    min-height: 50vh;
+    display: grid; place-content: center;
+  }
+  
+  .order-bg {width: 25em; height: auto;}
+}
